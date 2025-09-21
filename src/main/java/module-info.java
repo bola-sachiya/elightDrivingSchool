@@ -4,6 +4,7 @@ module lk.ijse.elightdrivingschool {
     requires static lombok;
     requires java.sql;
     requires jakarta.persistence;
+    requires org.hibernate.orm.core;
 
 
     opens lk.ijse.elightdrivingschool to javafx.fxml;

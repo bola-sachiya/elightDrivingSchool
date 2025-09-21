@@ -1,6 +1,7 @@
-package lk.ijse.elightdrivingschool.dto;
+package lk.ijse.elightdrivingschool.dto.tm;
 
 
+import javafx.event.ActionEvent;
 import lombok.*;
 
 import java.util.Date;
@@ -11,7 +12,8 @@ import java.util.Date;
 @Getter
 @ToString
 
-public class PaymentsDTO {
+
+public class PaymentTM extends ActionEvent {
     private String paymentId;
     private Date paymentDate;
     private double amount;

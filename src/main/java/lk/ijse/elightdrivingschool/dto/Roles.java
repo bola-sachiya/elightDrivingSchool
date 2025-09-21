@@ -1,4 +1,7 @@
+
 package lk.ijse.elightdrivingschool.dto;
 
-public class RolesDTO {
+public enum Roles {
+    ADMIN, USER
 }
+
