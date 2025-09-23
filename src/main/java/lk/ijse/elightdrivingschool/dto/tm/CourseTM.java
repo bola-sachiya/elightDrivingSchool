@@ -1,4 +1,3 @@
-
 package lk.ijse.elightdrivingschool.dto.tm;
 
 import javafx.event.ActionEvent;

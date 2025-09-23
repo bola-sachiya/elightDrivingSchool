@@ -1,10 +1,14 @@
 package lk.ijse.elightdrivingschool.dto;
 
 
+import lk.ijse.elightdrivingschool.dto.CourseDTO;
+import lk.ijse.elightdrivingschool.dto.LessonsDTO;
+import lk.ijse.elightdrivingschool.dto.PaymentsDTO;
 import lombok.*;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,7 +27,7 @@ public class StudentsDTO {
     private Date dob;
     private Date registrationDate;
     @Builder.Default
-    private ArrayList<StudentCourseDetailsDTO> studentCourseDetails = new ArrayList<>();
+    private List<CourseDTO> courses =new ArrayList<>();
     @Builder.Default
     private ArrayList<LessonsDTO> lessons =new ArrayList<>();
     @Builder.Default

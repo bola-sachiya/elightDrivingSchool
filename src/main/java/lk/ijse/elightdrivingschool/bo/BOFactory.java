@@ -1,7 +1,7 @@
 package lk.ijse.elightdrivingschool.bo;
 
-import lk.ijse.elitedrivingschoolsystemormcoursework.bo.custom.impl.*;
-import lk.ijse.elitedrivingschoolsystemormcoursework.dao.custom.impl.*;
+import lk.ijse.elightdrivingschool.bo.custom.impl.*;
+import lk.ijse.elightdrivingschool.dao.custom.impl.*;
 
 public class BOFactory {
     private static BOFactory boFactory;
