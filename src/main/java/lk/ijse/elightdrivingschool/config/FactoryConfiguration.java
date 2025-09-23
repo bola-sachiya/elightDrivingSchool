@@ -28,7 +28,6 @@ public class FactoryConfiguration {
                 .addAnnotatedClass(Instructors.class)
                 .addAnnotatedClass(Lessons.class)
                 .addAnnotatedClass(Payments.class)
-                .addAnnotatedClass(lk.ijse.elitedrivingschoolsystemormcoursework.entity.StudentCourseDetails.class)
                 .addAnnotatedClass(Students.class)
                 .addAnnotatedClass(User.class);
         sessionFactory = configuration.buildSessionFactory();
