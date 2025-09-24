@@ -1,6 +1,5 @@
 package lk.ijse.elightdrivingschool.dao;
 
-import lk.ijse.elightdrivingschool.dao.custom.CourseDAO;
 import lk.ijse.elightdrivingschool.dao.custom.impl.*;
 
 public class DAOFactory {
