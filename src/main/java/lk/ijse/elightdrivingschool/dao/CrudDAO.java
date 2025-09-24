@@ -4,7 +4,7 @@ package lk.ijse.elightdrivingschool.dao;
 import java.util.List;
 import java.util.Optional;
 
-public interface CrudDAO<T> {
+public interface CrudDAO<T> extends SuperDAO{
 
     List<T> getAll() throws Exception;
 

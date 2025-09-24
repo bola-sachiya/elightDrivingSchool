@@ -1,9 +1,10 @@
-
 package lk.ijse.elightdrivingschool.entity;
 
 import jakarta.persistence.*;
-import lk.ijse.elightdrivingschool.entity.Students;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.Date;
 
@@ -22,7 +23,7 @@ public class Payments {
 
     @ManyToOne
     @JoinColumn(name = "student_id", referencedColumnName = "studentId")
-    private Students student;
+    private Students students;
 
     @Column
     private Date paymentDate;
@@ -36,4 +37,3 @@ public class Payments {
     @Column(nullable = false)
     private String status;
 }
-
