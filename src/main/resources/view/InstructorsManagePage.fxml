@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.elightdrivingschool.controller.InstructorsManagePageController">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #f6e58d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.elightdrivingschool.controller.InstructorsManagePageController">
     <children>
         <BorderPane layoutX="-21.0" layoutY="36.0" prefHeight="174.0" prefWidth="1200.0" AnchorPane.bottomAnchor="680.8" AnchorPane.leftAnchor="-21.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="36.0">
             <center>
-                <Label text="instructors Details." BorderPane.alignment="CENTER">
+                <Label style="-fx-background-color: #f6e58d;" text="instructors Details." textFill="MAROON" BorderPane.alignment="CENTER">
                     <font>
                         <Font name="Jokerman" size="25.0" />
                     </font>
@@ -24,7 +24,7 @@
         </BorderPane>
         <HBox layoutY="110.0" prefHeight="37.0" prefWidth="1160.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="127.0">
             <children>
-                <Button mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="150.0" styleClass="cur-button" stylesheets="@../style/button.css" text="Add Instructor" textFill="WHITE">
+                <Button mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Add Instructor" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font>
@@ -35,7 +35,7 @@
                   <Insets />
                </opaqueInsets>
                 </Button>
-                <Button mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="38.0" prefWidth="150.0" styleClass="cur-button" stylesheets="@../style/button.css" text="Delete Instructor" textFill="WHITE">
+                <Button mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Delete Instructor" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font>
@@ -46,7 +46,7 @@
             </children>
         </HBox>
         <HBox layoutX="20.0" layoutY="650.0" prefHeight="37.0" prefWidth="1160.0" AnchorPane.bottomAnchor="20.0" />
-        <VBox layoutX="20.0" layoutY="163.0" prefHeight="562.0" prefWidth="1160.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: #000; -fx-border-width: 3px;" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="170.0">
+        <VBox layoutX="20.0" layoutY="163.0" prefHeight="562.0" prefWidth="1160.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: #800000; -fx-border-width: 3px;" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="170.0">
             <children>
                 <TableView fx:id="tblInstructors" onMouseClicked="#onClickTable" prefHeight="662.0" prefWidth="1149.0" stylesheets="/style/tableView.css">
                     <columns>

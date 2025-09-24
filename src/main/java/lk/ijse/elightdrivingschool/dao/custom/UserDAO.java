@@ -4,4 +4,5 @@ import lk.ijse.elightdrivingschool.dao.CrudDAO;
 import lk.ijse.elightdrivingschool.entity.User;
 
 public interface UserDAO extends CrudDAO<User> {
+    User getUserByUsername(String inputUsername);
 }

@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="581.0" prefWidth="400.0" style="-fx-background-radius: 0; -fx-background-color: #B0E0E6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.elightdrivingschool.controller.InstructorsPopUpController">
+<AnchorPane prefHeight="581.0" prefWidth="400.0" style="-fx-background-radius: 0; -fx-background-color: #f6e58d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.elightdrivingschool.controller.InstructorsPopUpController">
     <children>
-        <VBox layoutX="20.0" layoutY="65.0" prefHeight="419.0" prefWidth="360.0" style="-fx-background-color: #fff; -fx-background-radius: 20px; -fx-border-color: #000; -fx-border-width: 2px; -fx-border-radius: 20px;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <VBox layoutX="20.0" layoutY="65.0" prefHeight="419.0" prefWidth="360.0" style="-fx-background-color: #f6e58d; -fx-background-radius: 20px; -fx-border-color: #800000; -fx-border-width: 2px; -fx-border-radius: 20px;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
             <children>
                 <HBox prefHeight="58.0" prefWidth="306.0">
                     <children>
@@ -97,14 +97,14 @@
                 <HBox prefHeight="58.0" prefWidth="306.0" />
             </children>
         </VBox>
-        <VBox layoutX="51.0" layoutY="489.0" prefHeight="69.0" prefWidth="298.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px; -fx-background-color: #fff; -fx-border-color: #000; -fx-border-width: 2px;" AnchorPane.bottomAnchor="22.399999999999977" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="51.39999999999998">
+        <VBox layoutX="51.0" layoutY="489.0" prefHeight="69.0" prefWidth="298.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-color: #800000; -fx-border-width: 2px;" AnchorPane.bottomAnchor="22.399999999999977" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="51.39999999999998">
             <children>
                 <HBox prefHeight="41.0" prefWidth="306.0">
                     <VBox.margin>
                         <Insets bottom="-7.0" left="5.0" right="5.0" />
                     </VBox.margin>
                     <children>
-                        <Button fx:id="btnSave" mnemonicParsing="false" onAction="#btnSaveOncAction" prefHeight="26.0" prefWidth="135.0" styleClass="cur-button" stylesheets="@../style/button.css" text="Save">
+                        <Button fx:id="btnSave" mnemonicParsing="false" onAction="#btnSaveOncAction" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Save">
                             <HBox.margin>
                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                             </HBox.margin>
@@ -112,7 +112,7 @@
                                 <Font name="System Bold" size="15.0" />
                             </font>
                         </Button>
-                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="135.0" styleClass="cur-button" stylesheets="@../style/button.css" text="Update">
+                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Update">
                             <HBox.margin>
                                 <Insets top="10.0" />
                             </HBox.margin>
@@ -124,7 +124,7 @@
                 </HBox>
             </children>
         </VBox>
-        <HBox layoutX="25.0" layoutY="14.0" prefHeight="31.0" prefWidth="350.0" style="-fx-background-color: #fff; -fx-background-radius: 15px; -fx-border-color: #000; -fx-border-radius: 15px; -fx-border-width: 2px;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <HBox layoutX="25.0" layoutY="14.0" prefHeight="31.0" prefWidth="350.0" style="-fx-background-color: #f6e58d; -fx-background-radius: 15px; -fx-border-color: #800000; -fx-border-radius: 15px; -fx-border-width: 2px;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
             <children>
                 <Label prefHeight="62.0" prefWidth="128.0" text=" I ID">
                     <font>

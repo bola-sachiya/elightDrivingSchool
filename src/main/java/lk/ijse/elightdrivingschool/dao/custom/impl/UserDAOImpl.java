@@ -3,7 +3,6 @@ package lk.ijse.elightdrivingschool.dao.custom.impl;
 
 import lk.ijse.elightdrivingschool.config.FactoryConfiguration;
 import lk.ijse.elightdrivingschool.dao.custom.UserDAO;
-import lk.ijse.elightdrivingschool.entity.Course;
 import lk.ijse.elightdrivingschool.entity.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -137,4 +136,15 @@ public class UserDAOImpl implements UserDAO {
         }
     }
 
+    @Override
+    public User getUserByUsername(String userName) {
+        Session session = factoryConfiguration.getSession();
+        try {
+            Query<User> query = session.createQuery("FROM User u WHERE u.userName = :userName", User.class);
+            query.setParameter("userName", userName);
+            return query.uniqueResult();
+        } finally {
+            session.close();
+        }
+    }
 }
