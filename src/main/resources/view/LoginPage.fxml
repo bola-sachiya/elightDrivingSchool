@@ -128,9 +128,9 @@
                         </VBox>
                     </children>
                 </VBox>
-                <StackPane prefHeight="700.0" prefWidth="549.0" style="-fx-background-color: #f6e58d;">
+                <StackPane prefHeight="700.0" prefWidth="549.0" style="-fx-background-color: 3fff;">
                     <children>
-                        <ImageView fitHeight="248.0" fitWidth="269.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="207.0" fitWidth="252.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/Gemini_Generated_Image_hv86dwhv86dwhv86.png" />
                             </image>

@@ -36,6 +36,7 @@ public class QueryDAOImpl implements QueryDAO {
             Query<Double> query = session.createQuery(hql, Double.class);
             query.setParameter("studentId", studentId);
             Double result = query.uniqueResult();
+            System.out.println("Result: " + result);
             if (result != null) {
                 total = result;
             }

@@ -93,7 +93,7 @@ public class CourseManageController implements Initializable {
             }
 
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/interfaces/view/AddCoursePopUp.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/AddCoursePopUp.fxml"));
                 Parent parent = fxmlLoader.load();
 
                 CoursePopUpController controller = fxmlLoader.getController();

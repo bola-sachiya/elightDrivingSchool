@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to bottom right, #ffffff, #87cefa);;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.elightdrivingschool.controller.CourseManageController">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #f6e58d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.elightdrivingschool.controller.CourseManageController">
     <children>
         <BorderPane layoutY="8.8" prefHeight="94.0" prefWidth="1200.0" AnchorPane.bottomAnchor="697.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="9.0">
             <center>
-                <Label text="Course Details." BorderPane.alignment="CENTER">
+                <Label text="Course Details." textFill="MAROON" BorderPane.alignment="CENTER">
                     <font>
                         <Font name="Jokerman" size="25.0" />
                     </font>
@@ -24,26 +24,26 @@
         </BorderPane>
         <HBox layoutY="110.0" prefHeight="37.0" prefWidth="1160.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="127.0">
             <children>
-                <Button mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="150.0" styleClass="cur-button" stylesheets="@../style/button.css" text="Add Course" textFill="WHITE">
+                <Button mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Add Course" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font>
                     <HBox.margin>
-                        <Insets left="20.0" />
+                        <Insets left="20.0" top="-20.0" />
                     </HBox.margin>
                 </Button>
-                <Button mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="38.0" prefWidth="150.0" styleClass="cur-button" stylesheets="@../style/button.css" text="Delete Course" textFill="WHITE">
+                <Button mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Delete Course" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font>
                     <HBox.margin>
-                        <Insets left="20.0" />
+                        <Insets left="20.0" top="-20.0" />
                     </HBox.margin>
                 </Button>
             </children>
         </HBox>
-        <HBox layoutX="20.0" layoutY="650.0" prefHeight="37.0" prefWidth="1160.0" style="-fx-background-color: linear-gradient(to bottom right, #ffffff, #87cefa);;" AnchorPane.bottomAnchor="20.0" />
-        <VBox layoutX="20.0" layoutY="163.0" prefHeight="562.0" prefWidth="1160.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: #000; -fx-border-width: 3px;" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="170.0">
+        <HBox layoutX="20.0" layoutY="650.0" prefHeight="37.0" prefWidth="1160.0" style="-fx-background-color: #800000;" AnchorPane.bottomAnchor="20.0" />
+        <VBox layoutX="20.0" layoutY="163.0" prefHeight="562.0" prefWidth="1160.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: #800000; -fx-border-width: 3px;" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="170.0">
             <children>
                 <TableView fx:id="tblCourse" onMouseClicked="#onClickTable" prefHeight="758.0" prefWidth="1154.0" stylesheets="/style/button.css">
                     <columns>
