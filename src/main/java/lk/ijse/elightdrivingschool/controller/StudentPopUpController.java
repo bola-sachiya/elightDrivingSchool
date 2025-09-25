@@ -90,7 +90,7 @@ public class StudentPopUpController implements Initializable {
             return;
         }
         ArrayList<CourseDTO> selectedCourses = new ArrayList<>(listViewCourses.getSelectionModel().getSelectedItems());
-
+        System.out.println(selectedCourses);
         try {
             boolean isSaved = enrollBO.saveStudents(StudentsDTO.builder()
                     .studentId(lblStudentId.getText())

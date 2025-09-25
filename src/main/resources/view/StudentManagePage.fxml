@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to bottom, #ffffff, #add8e6);;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.elightdrivingschool.controller.StudentManagePageController">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #f6e58d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.elightdrivingschool.controller.StudentManagePageController">
     <children>
         <BorderPane layoutX="14.0" layoutY="14.0" prefHeight="174.0" prefWidth="1200.0" AnchorPane.bottomAnchor="702.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-14.0" AnchorPane.topAnchor="14.0">
          <center>
-            <Label text="Student Details." BorderPane.alignment="CENTER">
+            <Label text="Student Details." textFill="MAROON" BorderPane.alignment="CENTER">
                <font>
                   <Font name="Jokerman" size="30.0" />
                </font>
@@ -24,7 +24,7 @@
         </BorderPane>
         <HBox layoutY="110.0" prefHeight="37.0" prefWidth="1160.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="127.0">
             <children>
-                <Button mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="150.0" styleClass="cur-button" stylesheets="@../style/button.css" text="Add Student" textFill="WHITE">
+                <Button mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Add Student" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font>
@@ -32,7 +32,7 @@
                         <Insets left="20.0" />
                     </HBox.margin>
                 </Button>
-                <Button mnemonicParsing="false" onAction="#btnDeleteOnAAction" prefHeight="38.0" prefWidth="150.0" styleClass="cur-button" stylesheets="@../style/button.css" text="Delete Student" textFill="WHITE">
+                <Button mnemonicParsing="false" onAction="#btnDeleteOnAAction" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Delete Student" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font>
@@ -42,9 +42,9 @@
                 </Button>
             </children>
         </HBox>
-        <VBox layoutX="20.0" layoutY="193.0" prefHeight="562.0" prefWidth="1160.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: #000; -fx-border-width: 3px;" AnchorPane.bottomAnchor="45.39999999999998" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="193.0">
+        <VBox layoutX="20.0" layoutY="193.0" prefHeight="562.0" prefWidth="1160.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: #800000; -fx-border-width: 3px;" AnchorPane.bottomAnchor="45.39999999999998" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="193.0">
             <children>
-                <TableView fx:id="tblStudent" onMouseClicked="#onClickTable" prefHeight="662.0" prefWidth="1149.0" stylesheets="/interfaces/assets/styles/tableView.css">
+                <TableView fx:id="tblStudent" onMouseClicked="#onClickTable" prefHeight="662.0" prefWidth="1149.0" stylesheets="/style/tableView.css">
                     <columns>
                         <TableColumn fx:id="colId" prefWidth="75.0" text="Student Id" />
                         <TableColumn fx:id="colFirstName" prefWidth="75.0" text="First name" />

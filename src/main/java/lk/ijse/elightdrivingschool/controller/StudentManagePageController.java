@@ -75,7 +75,6 @@ public class StudentManagePageController implements Initializable {
                 String.join(", ", dto.getCourses().stream()
                         .map(CourseDTO::getCourse_id)
                         .toList());
-        System.out.println(dto);
 
         return new StudentTM(
                 dto.getStudentId(),
@@ -93,7 +92,7 @@ public class StudentManagePageController implements Initializable {
 
     public void btnAddOnAction(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/interfaces/view/AddStudentPopUp.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/AddStudentPopUp.fxml"));
             Parent parent = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -101,7 +100,6 @@ public class StudentManagePageController implements Initializable {
             stage.setScene(new Scene(parent));
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.showAndWait();
-
             loadAllStudents();
         } catch (IOException e) {
             new Alert(Alert.AlertType.ERROR, "Failed to open the popup!").show();
@@ -149,7 +147,7 @@ public class StudentManagePageController implements Initializable {
             }
 
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/interfaces/view/AddStudentPopUp.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/AddStudentPopUp.fxml"));
                 Parent parent = fxmlLoader.load();
 
                 StudentPopUpController controller = fxmlLoader.getController();

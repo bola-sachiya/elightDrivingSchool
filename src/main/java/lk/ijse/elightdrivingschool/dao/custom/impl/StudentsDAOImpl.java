@@ -2,7 +2,6 @@ package lk.ijse.elightdrivingschool.dao.custom.impl;
 
 import lk.ijse.elightdrivingschool.config.FactoryConfiguration;
 import lk.ijse.elightdrivingschool.dao.custom.StudentsDAO;
-import lk.ijse.elightdrivingschool.entity.Course;
 import lk.ijse.elightdrivingschool.entity.Students;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
