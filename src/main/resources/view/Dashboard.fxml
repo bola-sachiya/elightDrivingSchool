@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1294.0" style="-fx-background-color: #f6e58d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.elightdrivingschool.controller.DashBoardPageController">
+   <children>
+      <VBox layoutX="7.0" layoutY="176.8" prefHeight="622.0" prefWidth="391.0" spacing="40.0" style="-fx-background-color: #f6e58d;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="177.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btnInstructorOnAction" prefHeight="44.0" prefWidth="201.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Instructor" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="-9.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnStudentOnAction" prefHeight="44.0" prefWidth="201.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Student" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnCourseOnAction" prefHeight="44.0" prefWidth="201.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Course">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnPaymentOnAction" prefHeight="44.0" prefWidth="201.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Payment">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnLessonsOnAction" prefHeight="44.0" prefWidth="201.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="lessons">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnUserOnAction" prefHeight="44.0" prefWidth="201.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="User">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="44.0" prefWidth="201.0" style="-fx-background-color: #800000;" styleClass="cur-button" stylesheets="@../style/button.css" text="Logout">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="50.0" left="84.0" right="50.0" top="50.0" />
+         </padding>
+      </VBox>
+      <AnchorPane fx:id="ancDashBoardPage" layoutX="393.0" layoutY="-1.0" prefHeight="800.0" prefWidth="907.0" style="-fx-background-color: #f6e58d;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="393.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="-1.0">
+         <children>
+            <ImageView fitHeight="460.0" fitWidth="466.0" layoutX="334.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/76f88c88f18a2c29f0f8fc91cf0d3d68.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fitHeight="142.0" fitWidth="128.0" layoutX="127.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/EDANewLogo-WYnsoqfMvUbXTYmTqqeqLA-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

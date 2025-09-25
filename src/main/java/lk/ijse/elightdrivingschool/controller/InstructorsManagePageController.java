@@ -93,7 +93,7 @@ public class InstructorsManagePageController implements Initializable {
             }
 
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/interfaces/view/AddInstructorsPopUp.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/AddInstructorsPopUp.fxml"));
                 Parent parent = fxmlLoader.load();
 
                 InstructorsPopUpController controller = fxmlLoader.getController();
