@@ -2,8 +2,6 @@ package lk.ijse.elightdrivingschool.dao.custom.impl;
 
 import lk.ijse.elightdrivingschool.config.FactoryConfiguration;
 import lk.ijse.elightdrivingschool.dao.custom.LessonsDAO;
-import lk.ijse.elightdrivingschool.entity.Course;
-import lk.ijse.elightdrivingschool.entity.Instructors;
 import lk.ijse.elightdrivingschool.entity.Lessons;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -42,6 +40,8 @@ public class LessonsDAOImpl implements LessonsDAO {
             session.close();
         }
     }
+
+
 
     @Override
     public boolean save(Lessons lessons) throws Exception {

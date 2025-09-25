@@ -1,9 +1,6 @@
 package lk.ijse.elightdrivingschool.entity;
 
 import jakarta.persistence.*;
-import lk.ijse.elightdrivingschool.entity.Course;
-import lk.ijse.elightdrivingschool.entity.Instructors;
-import lk.ijse.elightdrivingschool.entity.Students;
 import lombok.*;
 
 import java.sql.Time;
@@ -24,7 +21,7 @@ public class Lessons {
 
     @ManyToOne
     @JoinColumn(name = "studentId", referencedColumnName = "studentId")
-    private Students student;
+    private Students students;
 
     @ManyToOne
     @JoinColumn(name = "courseId", referencedColumnName = "course_id")
@@ -32,16 +29,16 @@ public class Lessons {
 
     @ManyToOne
     @JoinColumn(name = "instructorId", referencedColumnName = "instructor_id")
-    private Instructors instructor;
+    private Instructors instructors;
 
     @Column
     private Date lessonDate;
 
     @Column
-    private Time startTime;
+    private String startTime;
 
     @Column
-    private Time endTime;
+    private String endTime;
 
     @Column
     private String status;
